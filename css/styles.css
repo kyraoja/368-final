@@ -1,0 +1,364 @@
+/* Color Palette
+Light Pink: FEBCCA
+Pink: F3869D
+Light Blue: 96C5D5
+Blue: 5A94A8
+Dark Blue: 586077 */
+
+@charset "UTF-8";
+/* CSS Document */
+
+/* Stylesheet */
+/*==============================
+	Structure & Layout 
+==============================*/
+.container {
+	margin: 0 auto;
+	width: 960px;
+}
+
+  body{
+	background: url("../img/pw_maze_white.png");
+	font-family: 'Source Sans Pro', sans-serif;	
+}
+
+h1{
+	color: #343434;
+	font-size: 5em;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+h3{
+	color: #5A94A8;
+	padding: 10px 0 0 0;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+p{
+	padding: 0 50px 0 0;
+	line-height: 25px;
+}
+
+/*==============================
+	Logo
+==============================*/
+#logo{
+	height: 150px;
+	width: auto;
+	margin: 25px 0 0 50px;
+}
+
+/*==============================
+	Navigation
+==============================*/
+li{
+	list-style: none;
+	text-align:center;
+	display: inline;
+	margin: 0 70px 0 70px;
+}
+
+
+nav{
+	background: #F3869D;
+	height: 80%;
+	padding: 15px 0 15px 0;
+	top: 42px;
+	width: 100%;
+	font-size: 1em;
+}
+
+nav ul {
+width: 100%;
+list-style: none;
+}
+
+nav ul li {
+float: left;
+}
+
+nav ul li a {
+display: block;
+text-decoration: none;
+}
+
+quote{
+	text-align: center;
+	width:100%;
+	height:auto;
+	font-size:40px;
+	padding: 0px 0px 0px 0px;		
+}
+
+#blockquote{
+	font-style: normal;
+	vertical-align: top;
+	font-size: 150px;
+	padding: 0px 0px 0px 0px;
+}
+
+#floater{
+	font-style: normal;
+	vertical-align: top;
+	font-size: 150px;
+	float: right;
+	padding: 0px 0px 0px 0px;
+}
+/*==============================
+	Images
+==============================*/
+#kyraimg{
+	width: 125%;
+	height: auto;
+	padding: 35px 0px 0px 0px;
+}
+
+#mag{
+	width: 25%;
+	height: auto;
+	float: left;
+	margin: 5px;
+}
+
+#mag2{
+	width: 25%;
+	height: auto;
+	float: left;
+}
+
+#mag3{
+	width: 25%;
+	height: auto;
+	float: both;
+}
+
+#mag4{
+	width: 25%;
+	height: auto;
+	float: both;
+}
+
+/*==============================
+	Resume Page
+==============================*/
+
+
+
+
+
+
+
+/*==============================
+	Gallery Page
+==============================*/
+
+
+
+
+
+/*==============================
+	Contact Page
+==============================*/
+form{
+	padding-top: 5px;
+	
+}
+
+button{
+  background:red;
+  border-radius: 10px;
+  border: none;
+}
+
+button-hover{
+  box-shadow: 2px 2px 2px gray;
+}
+
+textarea{
+  width: 50%;
+  height: 100%;
+  
+}
+
+h2{
+	padding-top: 60px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+/*==============================
+	Footer
+==============================*/
+footer{
+	padding: 25px 0px 20px 0px;
+	text-align:center;
+}
+
+#facebook{
+	width:3%;
+	height: auto;
+}
+
+#instagram{
+	width: 3%;
+	height: auto;
+}
+
+#linkedin{
+	width: 3%;
+	height: auto;
+}
+
+#pinterest{
+	width: 3%;
+	height: auto;
+}
+
+ul{
+	list-style: none;
+	line-height: 20px;
+	display: inline;
+}
+
+
+/*media queries*/
+@media screen and ( max-width: 1024px ) {
+
+	body{
+		background: red;
+	}
+	
+	p{
+		font-size: 1em;
+		margin: 5px;
+	}
+	
+	li{
+		list-style: none;
+		text-align:center;
+		display: inline;
+		margin: 0 50px 0 50px;
+}
+		
+	
+} /* END OF DESKTOP */
+
+
+
+/* TABLET */
+
+@media screen and ( max-width: 768px ) {
+
+	body{
+		background: green;
+	}
+	
+	h1{
+		text-align: center;
+		float: none;
+		font-size: 4em;
+		margin-top: 65px;
+	}
+	
+	#logo{
+		height: 150px;
+		width: auto;
+		margin: 25px 0 25px 50px;
+		float:left;
+}
+	
+	p{
+		font-size: 1em;
+		margin: 10px;
+	}
+	
+li{
+	list-style: none;
+	text-align:center;
+	display: inline;
+	margin: 0 70px 0 70px;
+}
+
+
+nav{
+	background: none;
+	height: 80%;
+	padding: 15px 0 15px 0;
+	top: 42px;
+	width: 100%;
+	font-size: 1em;
+}
+
+h3{
+	margin: 0 0 0 5px;
+}
+
+
+}
+/* PHONE */
+
+@media screen and ( max-width: 480px ) {
+	
+	body{
+		background: blue;
+	}
+	
+	footer{
+	padding: 25px 0px 20px 0px;
+	text-align: center;
+	display: inline;
+}
+
+#facebook{
+	width:3%;
+	height: auto;
+}
+
+#instagram{
+	width: 3%;
+	height: auto;
+}
+
+#linkedin{
+	width: 3%;
+	height: auto;
+}
+
+#pinterest{
+	width: 3%;
+	height: auto;
+}
+
+ul{
+	list-style: none;
+	line-height: 20px;
+	display: inline;
+}
+	
+	h3{
+		clear: both;
+	}
+
+li{
+	list-style: none;
+	text-align: center;
+	display: inline-block;
+	margin: 0 70px 0 70px;
+}
+
+
+nav{
+	background: none;
+	height: 80%;
+	padding: 15px 0 15px 0;
+	top: 42px;
+	width: 100%;
+	font-size: 1em;
+}
+	
+	#logo{
+	height: 150px;
+	width: auto;
+	margin: 25px 0 0 50px;
+	clear: right;
+}
+
+} /* END OF PHONE */
