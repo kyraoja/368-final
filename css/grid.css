@@ -41,7 +41,9 @@ display: block;
 }
 
 .container_12:before,
-.container_12:after {
+.container_12:after,
+.grid_12:after,
+ul:after {
   content: '.';
   display: block;
   overflow: hidden;
@@ -52,7 +54,9 @@ display: block;
   height: 0;
 }
 
-.container_12:after {
+.container_12:after,
+.grid_12:after,
+ul:after {
   clear: both;
 }
 

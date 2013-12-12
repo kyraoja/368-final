@@ -12,6 +12,10 @@ Dark Blue: 586077 */
 /*==============================
 	Structure & Layout 
 ==============================*/
+img {
+	width: 100%;
+}
+
 .container {
 	margin: 0 auto;
 	width: 960px;
@@ -34,6 +38,11 @@ h3{
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
+h4 {
+	padding: 0;
+	margin: 0;
+}
+
 p{
 	padding: 0 50px 0 0;
 	line-height: 25px;
@@ -51,21 +60,46 @@ p{
 /*==============================
 	Navigation
 ==============================*/
-li{
+nav a:link,
+nav a:visited{
+	color: #fff;
+}
+
+nav a:hover{
+	color: #000;
+}
+
+nav ul li{
 	list-style: none;
 	text-align:center;
 	display: inline;
-	margin: 0 70px 0 70px;
+	margin: 0 80px 0 70px;
+	line-height: 20px;
+}
+
+footer ul li {
+	list-style: none;
+	text-align:center;
+	display: inline;
+	margin: 0 15px 0 15px;
+}
+
+ul {
+	padding-left: 20px;
 }
 
 
+li {
+	list-style-type: square;
+}
+
 nav{
 	background: #F3869D;
-	height: 80%;
-	padding: 15px 0 15px 0;
+	height: 60%;
+	padding: 5px 0 5px 0;
 	top: 42px;
 	width: 100%;
-	font-size: 1em;
+	font-size: 1.25em;
 }
 
 nav ul {
@@ -104,6 +138,8 @@ quote{
 	float: right;
 	padding: 0px 0px 0px 0px;
 }
+
+
 /*==============================
 	Images
 ==============================*/
@@ -111,31 +147,6 @@ quote{
 	width: 125%;
 	height: auto;
 	padding: 35px 0px 0px 0px;
-}
-
-#mag{
-	width: 25%;
-	height: auto;
-	float: left;
-	margin: 5px;
-}
-
-#mag2{
-	width: 25%;
-	height: auto;
-	float: left;
-}
-
-#mag3{
-	width: 25%;
-	height: auto;
-	float: both;
-}
-
-#mag4{
-	width: 25%;
-	height: auto;
-	float: both;
 }
 
 /*==============================
@@ -147,21 +158,56 @@ quote{
 
 
 
-
 /*==============================
 	Gallery Page
 ==============================*/
+.gallery .control-button {
+  color: #ccc;
+  color: rgba(255, 255, 255, 0.4);
+}
 
+.gallery .control-button:hover {
+  color: white;
+  color: rgba(255, 255, 255, 0.8);
+}
 
+#slideshow img {
+        padding: 0;
+}
 
-
+/*
+	Theme controls how everything looks in Gallery CSS.
+*/
+.gallery {
+  position: relative;
+}
+.gallery .item {
+  max-height: auto;
+  overflow: hidden;
+  text-align: center;
+ 
+}
+.gallery .controls {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.gallery .control-button {
+  display: inline-block;
+  margin: 0 .02em;
+  font-size: 3em;
+  text-align: center;
+  text-decoration: none;
+  transition: color 5s;
+}
 
 /*==============================
 	Contact Page
 ==============================*/
 form{
 	padding-top: 5px;
-	
+	margin-left: 50px;
 }
 
 button{
@@ -188,8 +234,11 @@ h2{
 	Footer
 ==============================*/
 footer{
-	padding: 25px 0px 20px 0px;
+	padding: 7px 0px 5px 0px;
 	text-align:center;
+	background:#F3869D;
+	margin-top: 20px;
+	
 }
 
 #facebook{
@@ -212,12 +261,6 @@ footer{
 	height: auto;
 }
 
-ul{
-	list-style: none;
-	line-height: 20px;
-	display: inline;
-}
-
 
 /*media queries*/
 @media screen and ( max-width: 1024px ) {
@@ -237,7 +280,12 @@ ul{
 		display: inline;
 		margin: 0 50px 0 50px;
 }
-		
+	nav ul li{
+	list-style: none;
+	text-align:center;
+	display: inline;
+	margin: 0 50px 0 50px;
+}
 	
 } /* END OF DESKTOP */
 
@@ -280,17 +328,27 @@ li{
 
 nav{
 	background: none;
-	height: 80%;
-	padding: 15px 0 15px 0;
+	height: 40%;
+	padding: 5px 0 5px 0;
 	top: 42px;
 	width: 100%;
-	font-size: 1em;
+	font-size: 1.5em;
 }
 
 h3{
 	margin: 0 0 0 5px;
 }
 
+footer{
+	background: none;
+}
+
+nav ul li{
+	list-style: none;
+	text-align:center;
+	display: inline;
+	margin: 0 20px 0 20px;
+}
 
 }
 /* PHONE */
@@ -302,9 +360,10 @@ h3{
 	}
 	
 	footer{
-	padding: 25px 0px 20px 0px;
+	padding: 15px 0px 10px 0px;
 	text-align: center;
 	display: inline;
+	background: none;
 }
 
 #facebook{
@@ -331,6 +390,7 @@ ul{
 	list-style: none;
 	line-height: 20px;
 	display: inline;
+	
 }
 	
 	h3{
@@ -341,24 +401,33 @@ li{
 	list-style: none;
 	text-align: center;
 	display: inline-block;
-	margin: 0 70px 0 70px;
+	
 }
 
 
 nav{
 	background: none;
-	height: 80%;
+	height: 30%;
 	padding: 15px 0 15px 0;
 	top: 42px;
 	width: 100%;
-	font-size: 1em;
+	font-size: 1.5em;
+	line-height: 1em;
 }
 	
 	#logo{
 	height: 150px;
 	width: auto;
 	margin: 25px 0 0 50px;
-	clear: right;
+	float: left;
+}
+
+nav ul li{
+	list-style: none;
+	text-align:center;
+	display: block;
+	margin: 0 10px 0 10px;
+	float: none;
 }
 
 } /* END OF PHONE */
