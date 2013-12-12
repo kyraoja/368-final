@@ -302,9 +302,6 @@ footer{
 /*media queries*/
 @media screen and ( max-width: 1024px ) {
 
-	body{
-		background: red;
-	}
 	
 	p{
 		font-size: 1em;
@@ -332,9 +329,7 @@ footer{
 
 @media screen and ( max-width: 768px ) {
 
-	body{
-		background: green;
-	}
+
 	
 	h1{
 		text-align: center;
@@ -364,7 +359,7 @@ li{
 
 
 nav{
-	background: none;
+	background: #F3869D;
 	height: 40%;
 	padding: 5px 0 5px 0;
 	top: 42px;
@@ -392,9 +387,6 @@ nav ul li{
 
 @media screen and ( max-width: 480px ) {
 	
-	body{
-		background: blue;
-	}
 	
 	footer{
 	padding: 15px 0px 10px 0px;
@@ -443,7 +435,7 @@ li{
 
 
 nav{
-	background: none;
+	background: #F3869D;
 	height: 30%;
 	padding: 15px 0 15px 0;
 	top: 42px;
