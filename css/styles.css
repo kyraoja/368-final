@@ -73,8 +73,8 @@ nav ul li{
 	list-style: none;
 	text-align:center;
 	display: inline;
-	margin: 0 80px 0 70px;
-	line-height: 20px;
+	margin: 0 50px 0 50px;
+	line-height: 30px;
 }
 
 footer ul li {
@@ -93,11 +93,10 @@ li {
 	list-style-type: square;
 }
 
-nav{
+nav {
 	background: #F3869D;
 	height: 60%;
 	padding: 5px 0 5px 0;
-	top: 42px;
 	width: 100%;
 	font-size: 1.25em;
 }
@@ -139,7 +138,45 @@ quote{
 	padding: 0px 0px 0px 0px;
 }
 
+nav a{
+  background: url("../img/sprite.png") no-repeat 0 0; 
+  display: block;
+  padding: 0 0 0 40px;
+  height: 32px;
 
+}
+
+nav a:hover {
+ 	background: url("../img/sprite.png") no-repeat 0 -32px;
+
+}	
+
+nav li:nth-child(2) a {
+	background-position: 0 -68px;
+}
+	
+	
+nav li:nth-child(2) a:hover {
+	background-position: 0 -98px;
+}	
+
+nav li:nth-child(3) a {
+	background-position: 0 -130px;
+}
+	
+	
+nav li:nth-child(3) a:hover {
+	background-position: 0 -162px;
+}
+
+nav li:nth-child(4) a {
+	background-position: 0 -195px;
+}
+	
+	
+nav li:nth-child(4) a:hover {
+	background-position: 0 -226px;
+}
 /*==============================
 	Images
 ==============================*/
